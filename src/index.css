@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html { 
   @apply font-Poppins scroll-smooth;
 }
 body {
