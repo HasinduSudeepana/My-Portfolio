@@ -1,12 +1,14 @@
 import React from "react";
-import hero from "../assets/images/hero.png";
+import hero from "../assets/images/profile.png";
+
 const Hero = () => {
   const social_media = [
-    "logo-instagram",
-    "logo-facebook",
-    "logo-linkedin",
-    "logo-twitter",
+    { name: "logo-instagram", url: "https://www.instagram.com/___hazii__/" },
+    { name: "logo-facebook", url: "https://www.facebook.com/hasindusudeepana" },
+    { name: "logo-linkedin", url: "https://www.linkedin.com/in/hasindu-karunathilaka-390365213/" },
+    { name: "logo-twitter", url: "https://twitter.com/HSudeepana" },
   ];
+
   return (
     <section
       id="home"
@@ -22,22 +24,25 @@ const Hero = () => {
               Hello!
               <br />
             </span>
-            My Name is <span>John Alex</span>
+            My Name is <span>Hasindu Karunathilaka</span>
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
             Fullstack Developer
           </h4>
           <button className="btn-primary mt-8">Contact Me</button>
-          <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
-              <div
-                key={icon}
-                className="text-gray-600 hover:text-white cursor-pointer "
-              >
-                <ion-icon name={icon}></ion-icon>
-              </div>
-            ))}
-          </div>
+      <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
+        {social_media?.map((icon) => (
+          <a
+            key={icon.name}
+            href={icon.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-white cursor-pointer"
+          >
+            <ion-icon name={icon.name}></ion-icon>
+          </a>
+        ))}
+      </div>
         </div>
       </div>
     </section>

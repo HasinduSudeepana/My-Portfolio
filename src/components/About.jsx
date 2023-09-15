@@ -1,10 +1,10 @@
 import React from "react";
-import aboutImg from "../assets/images/about.png";
+import aboutImg from "../assets/images/about1.png";
 const About = () => {
   const info = [
-    { text: "Years experience", count: "04" },
-    { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "06" },
+    { text: "Years experience", count: "3" },
+    { text: "Completed Projects", count: "4" },
+    { text: "Companies Work", count: "1" },
   ];
   return (
     <section id="about" className="py-10 text-white">
@@ -17,17 +17,14 @@ const About = () => {
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+                I am an undergraduate at the University of Colombo School of Computing, seeking opportunities to use my technical expertise, education, and creativity in software development. As a hardworking and ambitious student who quickly learns and easily adapts to new technologies, I am a straightforward negotiator who desires to improve and maintain my skills while striving to be a valuable team member. 
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (
                   <div key={content.text}>
                     <h3 className="md:text-4xl text-2xl font-semibold text-white">
                       {content.count}
-                      <span className="text-cyan-600">+</span>{" "}
+                      <span className="text-cyan-600"></span>{" "}
                     </h3>
                     <span className="md:text-base text-xs">{content.text}</span>
                   </div>

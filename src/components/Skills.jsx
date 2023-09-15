@@ -3,24 +3,61 @@ import React from "react";
 const Skills = () => {
   const skills = [
     {
-      logo: "logo-html5",
-      level: "Advance",
+      logo: 'html.png',
+      name: "HTML",
       count: 86,
     },
     {
-      logo: "logo-css3",
-      level: "Expect",
-      count: 90,
+      logo: 'css.png',
+      name: "CSS",
+      count: 86,
     },
     {
-      logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
+      logo: 'react.png',
+      name: "React",
+      count: 75,
     },
     {
-      logo: "logo-react",
-      level: "Intermediate",
-      count: 80,
+      logo: 'nodejs.png',
+      name: "NodeJs",
+      count: 70,
+    }, 
+    {
+      logo: 'php.png',
+      name: "PHP",
+      count: 75,
+    },
+    {
+      logo: 'database.png',
+      name: "SQL",
+      count: 70,
+    },
+    {
+      logo: 'postgree.png',
+      name: "PostgreSQL",
+      count: 70,
+    },
+    {
+      logo: 'chakra.png',
+      name: "ChakraUI",
+      count: 86,
+    },
+
+
+    {
+      logo: 'c.png',
+      name: "C",
+      count: 70,
+    },
+    {
+      logo: 'c++.png',
+      name: "C++",
+      count: 70,
+    },
+    {
+      logo: 'scala.png',
+      name: "Scala",
+      count: 86,
     },
   ];
   return (
@@ -34,7 +71,8 @@ const Skills = () => {
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
+              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl 	flex-wrap: wrap;"
+
             >
               <div
                 style={{
@@ -43,10 +81,12 @@ const Skills = () => {
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                  {/* <ion-icon name={skill.logo}></ion-icon> */}
+                  <img src={skill.logo} alt="" className="w-20 h-20 h-full object-cover" />
+
                 </div>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
+              <p className="text-xl mt-3">{skill.name}</p>
             </div>
           ))}
         </div>
