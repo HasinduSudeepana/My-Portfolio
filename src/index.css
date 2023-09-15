@@ -29,6 +29,8 @@ textarea {
   @apply text-lg;
 }
 
+
+
 ::selection {
   @apply bg-cyan-600;
 }
