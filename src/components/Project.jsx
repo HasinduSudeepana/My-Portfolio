@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.png";
-import project3 from "../assets/images/project-3.jpg";
+import project3 from "../assets/images/project3.png";
 import project4 from "../assets/images/project-4.jpg";
 import project5 from "../assets/images/project-5.png";
 import project_person from "../assets/images/project_person1.png";
@@ -15,14 +15,17 @@ const Project = () => {
     {
       img: project1,
       name: "Volunteer Lanka",
-      github_link: "https://github.com/Sridhar-C-25",
-      // live_link: "https://myreactflix.netlify.app",
+      github_link: "https://github.com/HasinduSudeepana/bookshelf",
     },
     {
       img: project2,
       name: "Book Shelf",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      // live_link: "https://myjobsearch.netlify.app",
+      github_link: "https://github.com/HasinduSudeepana/bookshelf",
+    },
+    {
+      img: project3,
+      name: "Blog Application",
+      github_link: "https://github.com/HasinduSudeepana/bookshelf",
     },
     
   ];
@@ -67,13 +70,6 @@ const Project = () => {
                         className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                       >
                         Github
-                      </a>
-                      <a
-                        href={project_info.live_link}
-                        target="_blank"
-                        className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                      >
-                        Live Demo
                       </a>
                     </div>
                   </div>
