@@ -4,7 +4,7 @@ const About = () => {
   const info = [
     { text: "Years experience", count: "3" },
     { text: "Completed Projects", count: "4" },
-    { text: "Companies Work", count: "1" },
+    { text: "Companies served", count: "1" },
   ];
   return (
     <section id="about" className="py-10 text-white">
@@ -32,7 +32,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="./src/assets/Code_a_program.pdf" download>
+              <a href="./src/assets/Hasindu_karunathilaka.pdf" download>
                 <button className="btn-primary">Download CV</button>
               </a>
             </div>

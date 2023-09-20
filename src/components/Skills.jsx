@@ -25,7 +25,7 @@ const Skills = () => {
     {
       logo: 'php.png',
       name: "PHP",
-      count: 75,
+      count: 70,
     },
     {
       logo: 'database.png',
@@ -40,14 +40,14 @@ const Skills = () => {
     {
       logo: 'chakra.png',
       name: "ChakraUI",
-      count: 86,
+      count: 85,
     },
 
 
     {
       logo: 'c.png',
       name: "C",
-      count: 70,
+      count: 80,
     },
     {
       logo: 'c++.png',
@@ -57,7 +57,7 @@ const Skills = () => {
     {
       logo: 'scala.png',
       name: "Scala",
-      count: 86,
+      count: 75,
     },
   ];
   return (
@@ -66,7 +66,6 @@ const Skills = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
         <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
           {skills?.map((skill, i) => (
             <div
@@ -81,7 +80,6 @@ const Skills = () => {
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  {/* <ion-icon name={skill.logo}></ion-icon> */}
                   <img src={skill.logo} alt="" className="w-20 h-20 h-full object-cover" />
 
                 </div>
