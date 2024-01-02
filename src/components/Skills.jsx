@@ -13,6 +13,11 @@ const Skills = () => {
       count: 86,
     },
     {
+      logo: 'javascript.png',
+      name: "JavaScript",
+      count: 86,
+    },
+    {
       logo: 'react.png',
       name: "React",
       count: 75,
@@ -28,6 +33,36 @@ const Skills = () => {
       count: 70,
     },
     {
+      logo: 'c.png',
+      name: "C",
+      count: 80,
+    },
+    {
+      logo: 'c++.png',
+      name: "C++",
+      count: 70,
+    },
+    {
+      logo: 'java.png',
+      name: "Java",
+      count: 70,
+    },
+    {
+      logo: 'spring.png',
+      name: "Springboot",
+      count: 60,
+    },
+    {
+      logo: 'angular.png',
+      name: "Angular",
+      count: 60,
+    },
+    {
+      logo: 'scala.png',
+      name: "Scala",
+      count: 75,
+    },
+    {
       logo: 'database.png',
       name: "SQL",
       count: 70,
@@ -41,23 +76,6 @@ const Skills = () => {
       logo: 'chakra.png',
       name: "ChakraUI",
       count: 85,
-    },
-
-
-    {
-      logo: 'c.png',
-      name: "C",
-      count: 80,
-    },
-    {
-      logo: 'c++.png',
-      name: "C++",
-      count: 70,
-    },
-    {
-      logo: 'scala.png',
-      name: "Scala",
-      count: 75,
     },
   ];
   return (

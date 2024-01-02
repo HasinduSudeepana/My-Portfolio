@@ -13,7 +13,7 @@ const Hireme = () => {
             Bachelor Degree
           </h2>
           <p className="ml-5 text-justify max-w-lg text-xl mt-4 text-gray-200 leading-6">
-            Univercity of colombo school of computing
+            University of Colombo School of Computing
           </p>
         </div>
       </div>
